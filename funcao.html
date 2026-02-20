@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello Everyone</title>
+</head>
+<body>
+    <script>
+        // Variaveis externas eu posso usar dentro da função/
+        // porém se tiver uma variavel dentro da função, ela é priorizada
+        let userName = 'Alana lindaa';
+
+        function mostrarMensagem(){
+            let userName = "Joana";
+            userName = "Joaquina";
+
+            let mensagem = "Oie galeraa!" + userName
+            alert(mensagem)
+        }
+
+        mostrarMensagem();
+
+        // alert(mensagem);
+        // Retornará erro, pois a variavel pertence à função
+    </script>
+</body>
+</html>
