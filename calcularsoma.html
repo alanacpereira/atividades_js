@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcular soma</title>
+</head>
+
+<body>
+    <button id="botaoEnviar">Somar</button>
+    <script>
+        //Se eu não colocar um parametro, não preciso chamá-lo depois
+        function somaNumeros() {
+            //Pegar os valores dos números usando o prompt
+            let num1 = prompt("Digite o primeiro número");
+            let num2 = prompt("Digite o segundo número");
+
+            //Converter os valores para número e realizar soma(função de números)
+            let soma = Number(num1) + Number(num2);
+
+            //Para escrever/mostrar na tela
+            document.write(" A soma dos números é: " + soma);
+        }
+
+        //Procura o elemento que o id:"botaoEnviar", adicionar um evento clik,significa que
+        //quando clicar é a função que será executada.
+        document.getElementById("botaoEnviar").addEventListener("clik", function () {
+            //chama a função criada anteriormente
+            somaNumeros();
+        });
+    </script>
+</body>
+
+</html>
